@@ -66,14 +66,14 @@ This repository uses semantic commits based on iuricode/padroes-de-commits.
 
 Format:
 
-`<emoji> <type>: <short description>`
+`<type>: <short description>`
 
 Examples:
 
-- `📚 docs: update stage templates`
-- `✨ feat: add requirements repository`
-- `🐛 fix: correct stage gate checklist`
-- `🧪 test: include negative flow scenario`
+ `docs: update stage templates`
+ `feat: add requirements repository`
+ `fix: correct stage gate checklist`
+ `test: include negative flow scenario`
 
 Supported types:
 

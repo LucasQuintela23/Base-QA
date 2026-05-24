@@ -74,36 +74,36 @@ sequenceDiagram
 
 ## Commit message standard
 
-This project adopts the semantic commit convention from iuricode/padroes-de-commits (Conventional Commits style + optional emoji).
+This project adopts the semantic commit convention from iuricode/padroes-de-commits (Conventional Commits style, without emoji).
 
 Recommended format:
 
-`<emoji> <type>: <short description>`
+`<type>: <short description>`
 
 Examples:
 
-- `✨ feat: add approval gate traceability`
-- `🐛 fix: correct risk matrix status mapping`
-- `📚 docs: update QA pipeline sequence diagram`
-- `🧪 test: add scenario for boundary validation`
+- `feat: add approval gate traceability`
+- `fix: correct risk matrix status mapping`
+- `docs: update QA pipeline sequence diagram`
+- `test: add scenario for boundary validation`
 
 ### Allowed types
 
-| Type | Use when | Suggested emoji |
-|---|---|---|
-| feat | New feature | ✨ |
-| fix | Bug fix | 🐛 |
-| docs | Documentation only | 📚 |
-| test | Test creation/update/removal | 🧪 |
-| build | Build/dependency changes | 📦 |
-| perf | Performance improvement | ⚡ |
-| style | Formatting/lint without logic change | 💄 |
-| refactor | Internal refactor without behavior change | ♻️ |
-| chore | Maintenance/config/admin tasks | 🔧 |
-| ci | CI pipeline changes | 🧱 |
-| raw | Config/data/parameter changes | 🗃️ |
-| cleanup | Code cleanup/removing dead snippets | 🧹 |
-| remove | Removing files/features/deprecated code | 🗑️ |
+| Type | Use when |
+|---|---|
+| feat | New feature |
+| fix | Bug fix |
+| docs | Documentation only |
+| test | Test creation/update/removal |
+| build | Build/dependency changes |
+| perf | Performance improvement |
+| style | Formatting/lint without logic change |
+| refactor | Internal refactor without behavior change |
+| chore | Maintenance/config/admin tasks |
+| ci | CI pipeline changes |
+| raw | Config/data/parameter changes |
+| cleanup | Code cleanup/removing dead snippets |
+| remove | Removing files/features/deprecated code |
 
 ### Good practices
 

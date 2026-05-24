@@ -16,7 +16,7 @@ Any agent/Copilot working here MUST follow the rules below without exception.
 4. At the end of each phase, ask: *"Do you agree with this phase? Can I proceed to the next stage of the pipeline?"*
 5. Traceability: every Playwright test references the SDD/BDD scenario ID in the title.
 6. In Phase 3, include BDD scenarios using Gherkin (`Given/When/Then`) for each specification.
-7. Commit messages must follow iuricode/padroes-de-commits semantic standard (Conventional Commits style with optional emoji).
+7. Commit messages must follow iuricode/padroes-de-commits semantic standard (Conventional Commits style without emoji).
 8. Language: **English**. Tone: professional, balanced.
 
 ## Allowed stack (Phase 4)

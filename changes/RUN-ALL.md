@@ -25,13 +25,13 @@ Before Stage 001, create or update a requirement package in `../requirements/inc
 
 | Stage | Suggested commit message |
 |---|---|
-| Requirement intake | `🗃️ raw: add requirement package for new request` |
-| 001 | `📚 docs: fill stage 001 intake specification` |
-| 002 | `📚 docs: fill stage 002 planning test plan` |
-| 003 | `📚 docs: fill stage 003 risk analysis matrix` |
-| 004 | `📚 docs: model stage 004 sdd bdd gherkin scenarios` |
-| 005 | `📚 docs: register stage 005 approval evidence` |
-| 006 | `🧪 test: add playwright scenarios for approved sdd bdd ids` |
+| Requirement intake | `raw: add requirement package for new request` |
+| 001 | `docs: fill stage 001 intake specification` |
+| 002 | `docs: fill stage 002 planning test plan` |
+| 003 | `docs: fill stage 003 risk analysis matrix` |
+| 004 | `docs: model stage 004 sdd bdd gherkin scenarios` |
+| 005 | `docs: register stage 005 approval evidence` |
+| 006 | `test: add playwright scenarios for approved sdd bdd ids` |
 
 Detailed reference:
 
