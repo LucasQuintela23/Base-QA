@@ -14,11 +14,11 @@ All new User Stories and Business Rules must be stored in `../requirements/` for
 
 - Create one file per request in `../requirements/incoming/`.
 - Register each package in `../requirements/index.md`.
-- Use `../requirements/TEMPLATE-US-BR.md` as the standard input template.
+- Use `../requirements/TEMPLATE-REQUIREMENTS.md` as the standard input template.
 
 ## Quick start
 
-1. Copy `../requirements/TEMPLATE-US-BR.md`.
+1. Copy `../requirements/TEMPLATE-REQUIREMENTS.md`.
 2. Save as `../requirements/incoming/REQ-YYYYMMDD-###-short-name.md`.
 3. Register the package in `../requirements/index.md`.
 4. Execute stages `001` to `005` under `../changes/`.
@@ -42,7 +42,7 @@ sequenceDiagram
 	participant T as tests/**/*.spec.js
 	participant G as Git history
 
-	QA->>RR: Create requirement package (US, BR, contracts)
+	QA->>RR: Create requirement package (User Stories, Business Rules, contracts)
 	QA->>IDX: Register requirement package
 	QA->>S001: Validate inputs and references
 	QA->>S002: Define scope, strategy, entry and exit criteria
@@ -85,7 +85,7 @@ Quick reference with copy-and-paste examples:
 
 | Stage | Folder | Purpose |
 |------|--------|---------|
-| 001 | `../changes/001-intake-specification` | Consolidate required inputs (US, BR, contracts) |
+| 001 | `../changes/001-intake-specification` | Consolidate required inputs (User Stories, Business Rules, contracts) |
 | 002 | `../changes/002-planning-test-plan` | Produce planning and tactical strategy |
 | 003 | `../changes/003-risk-analysis` | Build risk matrix and mitigations |
 | 004 | `../changes/004-sdd-bdd-gherkin-modeling` | Model SDD + BDD scenarios in Gherkin |

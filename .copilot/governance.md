@@ -30,7 +30,7 @@ Goal: enforce strict compliance with the quality pipeline before any code is wri
 ```mermaid
 flowchart LR
     A[QA Request] --> B{Specification<br/>provided?}
-    B -- No --> S[Request US + BR + Contracts]
+    B -- No --> S[Request User Stories + Business Rules + Contracts]
     S --> B
     B -- Yes --> F1[PHASE 1<br/>docs/test_plan.md]
     F1 --> AP1{Approved?}

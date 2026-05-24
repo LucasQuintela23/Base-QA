@@ -12,7 +12,7 @@
 - US-001:
 
 ## Business Rules
-- BR-001:
+- BUSINESS-RULE-001:
 
 ## Contracts and References
 - OpenAPI/Swagger:

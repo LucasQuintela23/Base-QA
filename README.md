@@ -24,7 +24,7 @@ The repository follows a **Zero-Code First** approach: before any automation sta
 
 Use this path every time you receive a new automation request:
 
-1. Create a requirement package from `requirements/TEMPLATE-US-BR.md`.
+1. Create a requirement package from `requirements/TEMPLATE-REQUIREMENTS.md`.
 2. Save it in `requirements/incoming/REQ-YYYYMMDD-###-short-name.md`.
 3. Register it in `requirements/index.md`.
 4. Execute templates from `changes/001` to `changes/005`.
@@ -49,7 +49,7 @@ sequenceDiagram
 	participant T as tests/**/*.spec.js
 	participant G as Git history
 
-	QA->>RR: Create requirement package (US, BR, contracts)
+	QA->>RR: Create requirement package (User Stories, Business Rules, contracts)
 	QA->>IDX: Register requirement package
 	QA->>S001: Fill intake template and validate inputs
 	S001-->>QA: Intake completed
@@ -120,8 +120,8 @@ Quick reference with copy-and-paste examples:
 
 Before you start, consolidate:
 
-- User Stories (US)
-- Business Rules (BR)
+- User Stories
+- Business Rules
 - Technical contracts (Swagger/OpenAPI) and/or screen/route map
 
 Without these inputs, the pipeline must not move forward.
@@ -192,7 +192,7 @@ Base-QA/
 ├── requirements/
 │   ├── incoming/
 │   ├── index.md
-│   └── TEMPLATE-US-BR.md
+│   └── TEMPLATE-REQUIREMENTS.md
 ├── changes/
 │   ├── 001-intake-specification/
 │   ├── 002-planning-test-plan/
@@ -244,7 +244,7 @@ Base-QA/
 ## Recommended operating flow
 
 1. Receive the validation request.
-2. Register US + BR + contracts in requirements/incoming and update requirements/index.md.
+2. Register User Stories, Business Rules, and contracts in requirements/incoming and update requirements/index.md.
 3. Execute stages 001 to 005 under changes.
 4. Confirm approval gate in changes/005-approval-gate.
 5. Use changes/RUN-ALL.md as the global checklist.

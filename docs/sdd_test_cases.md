@@ -21,7 +21,7 @@
 Describe the rule validated by this specification.
 
 #### Related Business Rules
-- BR-001
+- BUSINESS-RULE-001
 
 #### Preconditions and Test Data
 - Preconditions:
