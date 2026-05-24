@@ -11,11 +11,13 @@ Any agent/Copilot working here MUST follow the rules below without exception.
 3. Mandatory artifact sequence:
    - Phase 1 -> `docs/test_plan.md`
    - Phase 2 -> `docs/risk_analysis.md`
-   - Phase 3 -> `docs/sdd_test_cases.md`
+   - Phase 3 -> `docs/sdd_test_cases.md` (SDD + BDD in Gherkin)
    - Phase 4 -> `tests/**/*.spec.js` (Playwright + JavaScript **exclusively**)
 4. At the end of each phase, ask: *"Do you agree with this phase? Can I proceed to the next stage of the pipeline?"*
-5. Traceability: every Playwright test references the SDD scenario ID in the title.
-6. Language: **English**. Tone: professional, balanced.
+5. Traceability: every Playwright test references the SDD/BDD scenario ID in the title.
+6. In Phase 3, include BDD scenarios using Gherkin (`Given/When/Then`) for each specification.
+7. Commit messages must follow iuricode/padroes-de-commits semantic standard (Conventional Commits style with optional emoji).
+8. Language: **English**. Tone: professional, balanced.
 
 ## Allowed stack (Phase 4)
 - Playwright Test (`@playwright/test`)
@@ -24,5 +26,6 @@ Any agent/Copilot working here MUST follow the rules below without exception.
 
 ## What NOT to do
 - Do not suggest TypeScript, Cypress, Selenium, WebdriverIO, or any other framework.
-- Do not create `.spec.js` without an SDD-traceable ID.
+- Do not create `.spec.js` without an SDD/BDD-traceable ID.
 - Do not skip phases "because the request is simple".
+- Do not use non-semantic commit messages.

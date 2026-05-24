@@ -19,7 +19,8 @@ Goal: enforce strict compliance with the quality pipeline before any code is wri
 | R2 | **Mandatory Pipeline Trigger** | For requests such as *"create automation"*, *"new test"*, *"new project"*, or *"validate functionality"*, interrupt the flow and request: User Stories, Business Rules, and Contracts (Swagger/OpenAPI). |
 | R3 | **Sequential Flow** | Phase 4 (code) starts only after Phases 1, 2, and 3 are **produced and approved** by QA. |
 | R4 | **Exclusive Stack** | Once automation is unlocked: **Playwright + JavaScript**, with clean code and appropriate design patterns (POM, fixtures, etc.). |
-| R5 | **Traceability** | SDD scenario IDs must be referenced in `.spec.js` files (comment/test title). |
+| R5 | **Traceability** | SDD/BDD scenario IDs must be referenced in `.spec.js` files (comment/test title). |
+| R7 | **BDD + Gherkin Modeling** | Phase 3 must include BDD scenarios in Gherkin format (`Given/When/Then`) for each specification. |
 | R6 | **Phase Checkpoint** | At the end of each phase, ask: *"Do you agree with this phase? Can I proceed to the next stage of the pipeline?"* |
 
 ---
@@ -55,16 +56,20 @@ flowchart LR
 ### PHASE 2 — Risk Analysis -> `docs/risk_analysis.md`
 Table matrix with: **Risk | Category (Technical/Business) | Probability (H/M/L) | Impact (H/M/L) | Mitigation**.
 
-### PHASE 3 — SDD Modeling -> `docs/sdd_test_cases.md`
+### PHASE 3 — SDD + BDD Modeling (Gherkin) -> `docs/sdd_test_cases.md`
 Checklist per specification:
 - **[ID] Specification Name**
 - **Expected Behavior**
 - **Scenarios:** `[ ]` Happy Path · `[ ]` Exceptions/Negative · `[ ]` Boundary Limits
+- **BDD Gherkin scenarios:**
+    - `Given` initial context
+    - `When` user/system action
+    - `Then` expected outcome
 - **Preconditions and Test Data**
 
 ### PHASE 4 — Automation (Playwright + JS)
 - Suggested structure: `tests/`, `pages/` (POM), `fixtures/`, `utils/`, `playwright.config.js`
-- Each test cites the SDD ID in `test('SDD-XYZ - description', ...)`.
+- Each test cites the SDD/BDD ID in `test('SDD-BDD-XYZ - description', ...)`.
 - Best practices: semantic locators (`getByRole`), web-first `expect`, `beforeEach` isolation, fixture-based data.
 
 ---
